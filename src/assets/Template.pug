@@ -1,0 +1,29 @@
+.AudioPanel-root
+  audio(id='AudioPanel_audio_${this.prefix}' src='${this.src}')
+  .AudioPanel-container
+    .AudioPanel-controls
+      .AudioPanel-button.AudioPanel-buttonPlay
+        button.PlayButton-root.PlayButton-isInAudioPanel(aria-label='play button' data-unplayed='true' type='button' id='AudioPanel_playButton_${this.prefix}')
+          span.PlayButton-control(tabindex='-1')
+            svg.SvgSymbol-root.SvgSymbol-medium.SvgSymbol-play(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='62' height='62' viewbox='0 0 62 62')
+              path(d='M24.35 41.772a.5.5 0 0 1-.739-.439V20.667a.5.5 0 0 1 .74-.44l18.944 10.334a.5.5 0 0 1 0 .878L24.351 41.772z' fill-rule='nonzero')
+      button.AudioPanel-button(type='button' id='AudioPanel_speedChange_${this.prefix}')
+        svg.SvgSymbol-root(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='27' viewbox='0 0 25 27')
+          path(d='M9.955 18v-4.84l-1.11 1.13-.81-.85 2.1-2.11h1.24V18h-1.42zm4.6-2.78l-1.4 1.41-.57-.55 1.41-1.42-1.41-1.41.57-.56 1.4 1.42 1.41-1.42.56.56-1.41 1.41 1.41 1.42-.56.55-1.41-1.41z' fill-rule='nonzero')
+          path(d='M12.5 27C19.404 27 25 21.404 25 14.5S19.404 2 12.5 2 0 7.596 0 14.5 5.596 27 12.5 27zm0-1.5c-6.075 0-11-4.925-11-11s4.925-11 11-11 11 4.925 11 11-4.925 11-11 11z' fill-rule='nonzero')
+      button.AudioPanel-button(type='button' id='AudioPanel_skipBack_${this.prefix}')
+        svg.SvgSymbol-root(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='27' viewbox='0 0 25 27')
+          path(d='M13 0v2.01c6.672.263 12 5.754 12 12.49C25 21.404 19.404 27 12.5 27S0 21.404 0 14.5c0-3.493 1.441-6.758 3.936-9.105a.75.75 0 111.028 1.092A10.965 10.965 0 001.5 14.5c0 6.075 4.925 11 11 11s11-4.925 11-11c0-5.907-4.656-10.727-10.499-10.989L13 6 8 3l5-3zm3.295 11.33v1.25h-3.16v1.63c.32-.32.86-.56 1.47-.56 1.13 0 2.14.81 2.14 2.16 0 1.42-1.06 2.31-2.67 2.31-1.16 0-2-.38-2.57-1l.79-.99c.45.47 1.07.73 1.77.73.79 0 1.24-.45 1.24-.99 0-.59-.44-.99-1.2-.99-.55 0-1 .16-1.4.54l-.99-.26v-3.83h4.58zm-5.94 0V18h-1.42v-4.84l-1.11 1.13-.81-.85 2.1-2.11h1.24z' fill-rule='nonzero')
+      button.AudioPanel-button(type='button' id='AudioPanel_skipForward_${this.prefix}')
+        svg.SvgSymbol-root(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='27' viewbox='0 0 25 27')
+          path(d='M12 0l5 3-5 3V3.511C6.157 3.773 1.5 8.592 1.5 14.5c0 6.075 4.925 11 11 11s11-4.925 11-11c0-3.075-1.267-5.946-3.464-8.013a.75.75 0 011.028-1.092A12.465 12.465 0 0125 14.5C25 21.404 19.404 27 12.5 27S0 21.404 0 14.5C0 7.764 5.328 2.272 12 2.01V0zm4.295 11.33v1.25h-3.16v1.63c.32-.32.86-.56 1.47-.56 1.13 0 2.14.81 2.14 2.16 0 1.42-1.06 2.31-2.67 2.31-1.16 0-2-.38-2.57-1l.79-.99c.45.47 1.07.73 1.77.73.79 0 1.24-.45 1.24-.99 0-.59-.44-.99-1.2-.99-.55 0-1 .16-1.4.54l-.99-.26v-3.83h4.58zm-5.94 0V18h-1.42v-4.84l-1.11 1.13-.81-.85 2.1-2.11h1.24z' fill-rule='nonzero')
+      a.AudioPanel-button.AudioPanel-buttonDownload(target='_blank' id='AudioPanel_buttonDownload_${this.prefix}' download='')
+        svg.SvgSymbol-root(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='27' viewbox='0 0 25 27')
+          path(d='M12.5 2C19.404 2 25 7.596 25 14.5S19.404 27 12.5 27 0 21.404 0 14.5 5.596 2 12.5 2zm0 1.5c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm6 15.75a.75.75 0 01.102 1.493l-.102.007h-12a.75.75 0 01-.102-1.493l.102-.007h12zm-6-12a.75.75 0 01.743.648L13.25 8v7.598l1.834-1.222a.75.75 0 11.832 1.248l-3 2a.75.75 0 01-.832 0l-3-2a.75.75 0 11.832-1.248l1.834 1.223V8a.75.75 0 01.648-.743l.102-.007z' fill-rule='nonzero')
+    .AudioPanel-title(id='AudioPanel_title_${this.prefix}')
+    div
+      .Progress-panel.Progress-isInAudioPanel(data-unplayed='true')
+        input.range_input(type='range' id='range_input_${this.prefix}' value='0' max='100')
+      .AudioPanel-progressText
+        span(id='AudioPanel_currentTime_${this.prefix}') 00:00
+        span(id='AudioPanel_endTime_${this.prefix}')

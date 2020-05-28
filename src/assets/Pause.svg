@@ -1,0 +1,6 @@
+<span class="PlayButton-control" tabindex="-1">
+    <svg width="62" height="62"  class="SvgSymbol-root SvgSymbol-medium SvgSymbol-play" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M34.8276 17H42.1724C42.6294 17 43 17.3177 43 17.7095V45.2905C43 45.6823 42.6294 46 42.1724 46H34.8276C34.3706 46 34 45.6823 34 45.2905V17.7095C34 17.3177 34.3706 17 34.8276 17Z" fill="black"/>
+    <path d="M20.8276 17H28.1724C28.6294 17 29 17.3177 29 17.7095V45.2905C29 45.6823 28.6294 46 28.1724 46H20.8276C20.3706 46 20 45.6823 20 45.2905V17.7095C20 17.3177 20.3706 17 20.8276 17Z" fill="black"/>
+    </svg>
+    </span>
